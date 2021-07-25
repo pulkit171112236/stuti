@@ -42,7 +42,6 @@ body {
 .stotra {
   text-align: center;
   width: 100%;
-  border-left: solid 0.5px;
   border-radius: 10px;
 }
 .title {
@@ -56,9 +55,9 @@ body {
 }
 .verse-item {
   background-color: lavenderblush;
-  margin: 30px 10%;
+  margin: 100px 5%;
   padding: 10px 10px;
-  border-radius: 10px;
+  border-radius: 50px;
   font-size: 15px;
   /* width: max-content; */
 }
