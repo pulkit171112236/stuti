@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background: lavender;
+}
+.page {
+  display: flex;
+}
+.menu {
+  width: 300px;
+  background: lightgrey;
+
+  /* margin-left: 5px; */
+  /* border-radius: 10px; */
+  /* text-align: center; */
+}
+.menu-list {
+  background-color: white;
+  /* margin-top: 100px; */
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+.menu-item {
+  /* border: solid; */
+  border-radius: 3px;
+  margin: 20px 0;
+  padding: 10px 20%;
+}
+.menu-item:hover {
+  text-decoration: underline;
+  background-color: lavender;
+  cursor: pointer;
+}
+.player {
+  margin: 10px 0;
+}
+.stotra {
+  text-align: center;
+  width: 100%;
+  border-left: solid 0.5px;
+  border-radius: 10px;
+}
+.title {
+  background: darkslategrey;
+  color: white;
+  margin: 0;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+.stotra-content {
+}
+.verse-item {
+  background-color: lavenderblush;
+  margin: 30px 10%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  /* width: max-content; */
+}
+footer {
+  height: 100px;
+}
+
+div {
+  /* border: solid; */
+}
