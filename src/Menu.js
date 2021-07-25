@@ -42,8 +42,8 @@ function Title(props) {
 }
 function Player(props) {
   return (
-    <figure className="player">
-      <audio controls src={ref[props.currSelection]}>
+    <figure className="player-container">
+      <audio className="audio-player" controls src={ref[props.currSelection]}>
         Your browser does not support the
         <code>audio</code> element.
       </audio>
