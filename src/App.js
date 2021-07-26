@@ -3,9 +3,7 @@ import Stotra from "./Stotra.js";
 import Menu from "./Menu.js";
 
 function App() {
-  // const home = "shivashtakam"
-  // const home = "achyutashtakam"
-  const [home, setHome] = useState("achyutashtakam");
+  const [home, setHome] = useState("omnamahshivay");
   document.addEventListener("click", (e) => handleClick(e, setHome));
   return (
     <div className="page">
@@ -17,7 +15,11 @@ function App() {
 export default App;
 
 const handleClick = (e, setHome) => {
-  if (e.target.className === "menu-item") {
-    setHome(e.target.id);
+  let el = e.target;
+  if (el.className === "menu-item") {
+    setHome(el.id);
+    el.parentElement.classList.remove("menu-list-active");
+  } else if (el.className === "title-head") {
+    document.querySelector(".menu-list").classList.add("menu-list-active");
   }
 };

@@ -1,14 +1,15 @@
 import React from "react";
-import { titles, data } from "./static/data.js";
+import { titles, data } from "./static/textdata.js";
 
 function Stotra(props) {
   let key = props.name;
-  if (!data[key]) return <h1>Error</h1>;
-  const title = titles[key];
-  const stotra = data[key];
+  const title = titles[key] || "--स्तुति--";
+  const stotra = data[key] || [];
   return (
     <div className="stotra">
-      <h1 className="title">{title}</h1>
+      <div className="title">
+        <h1 className="title-head">{title}</h1>
+      </div>
       <div className="stotra-content">
         {stotra.map((verse) => {
           return <Verse verse={verse} />;
